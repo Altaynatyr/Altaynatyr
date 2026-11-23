@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алтайнатур — алтайские травы и природные материалы</title>
+  <style>
+    :root {
+      --primary: #2e8b57;
+      --bg-overlay: rgba(0, 0, 0, 0.55);
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: #fff;
+      line-height: 1.6;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1581688575669-3284d0a71b9a?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: var(--bg-overlay);
+    }
+    .container {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      max-width: 600px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0 0 12px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+    p.tagline {
+      font-size: 1.1rem;
+      opacity: 0.95;
+      margin-bottom: 32px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    @media (min-width: 700px) {
+      .buttons { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: 16px; }
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s, opacity 0.2s;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); opacity: 0.92; }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-secondary { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.2); }
+    .footer {
+      padding: 40px 20px;
+      background: #0f171a;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    .footer a { color: #4da6ff; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="container">
+      <h1>Алтайнатур</h1>
+      <p class="tagline">
+        Собираем алтайские травы для вкусных и полезных чаёв. Сосновые шишки для рукоделия — натуральные материалы для творчества.
+      </p>
+
+      <div class="buttons">
+        <a href="tel:+79967019755" class="btn btn-primary">Позвонить</a>
+        <a href="https://wa.me/79967019755" class="btn btn-secondary">WhatsApp</a>
+        <a href="https://t.me/altaynatyr" class="btn btn-secondary">Telegram</a>
+        <a href="https://vk.ru/altay_natyr" class="btn btn-secondary">ВКонтакте</a>
+        <a href="https://ok.ru/group/70000060684119" class="btn btn-secondary">Одноклассники</a>
+        <a href="https://ozon.ru/s/altaynatur" class="btn btn-secondary">Ozon</a>
+        <a href="https://www.wildberries.ru/seller/250104640" class="btn btn-secondary">Wildberries</a>
+        <a href="mailto:altaynatyr@yandex.ru" class="btn btn-secondary">Написать на почту</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>✉️ <a href="mailto:altaynatyr@yandex.ru">altaynatyr@yandex.ru</a> &nbsp;·&nbsp; 📞 <a href="tel:+79967019755">+7 996 701-97-55</a></p>
+    <p>&copy; 2026 Алтайнатур. Все права защищены.</p>
+  </footer>
+</body>
+</html>
